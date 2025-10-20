@@ -1,0 +1,44 @@
+table.horario {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+  font-family: Arial;
+  text-align: center;
+}
+
+table.horario th, table.horario td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+table.horario th {
+  background-color: #D8BFD8; /* Morado claro para encabezados */
+}
+
+td.programacion {
+  background-color: #FFB6C1; /* Rosa claro */
+}
+
+td.entornos {
+  background-color: #ADD8E6; /* Azul claro */
+}
+
+td.bbdd {
+  background-color: #90EE90; /* Verde claro */
+}
+
+td.sistemas {
+  background-color: #FFD700; /* Amarillo */
+}
+
+td.lenguajes {
+  background-color: #FFA07A; /* Salmón */
+}
+
+td.digitalizacion {
+  background-color: #E6E6FA; /* Lila muy claro */
+}
+
+td.sostenibilidad {
+  background-color: #98FB98; /* Verde pastel */
+}
