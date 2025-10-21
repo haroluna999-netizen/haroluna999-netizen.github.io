@@ -12,33 +12,33 @@ table.horario th, table.horario td {
 }
 
 table.horario th {
-  background-color: #D8BFD8; /* Morado claro para encabezados */
+  background-color: #D8BFD8; 
 }
 
 td.programacion {
-  background-color: #FFB6C1; /* Rosa claro */
+  background-color: #FFB6C1; 
 }
 
 td.entornos {
-  background-color: #ADD8E6; /* Azul claro */
+  background-color: #ADD8E6; 
 }
 
 td.bbdd {
-  background-color: #90EE90; /* Verde claro */
+  background-color: #90EE90; 
 }
 
 td.sistemas {
-  background-color: #FFD700; /* Amarillo */
+  background-color: #FFD700; 
 }
 
 td.lenguajes {
-  background-color: #FFA07A; /* Salmón */
+  background-color: #FFA07A; 
 }
 
 td.digitalizacion {
-  background-color: #E6E6FA; /* Lila muy claro */
+  background-color: #E6E6FA;
 }
 
 td.sostenibilidad {
-  background-color: #98FB98; /* Verde pastel */
+  background-color: mediumslateblue 
 }
