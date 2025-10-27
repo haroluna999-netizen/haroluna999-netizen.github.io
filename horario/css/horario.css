@@ -33,6 +33,7 @@ td.sistemas {
 
 td.lenguajes {
   background-color: #FFA07A; 
+
 }
 
 td.digitalizacion {
@@ -41,4 +42,7 @@ td.digitalizacion {
 
 td.sostenibilidad {
   background-color: mediumslateblue 
+}
+h1 {
+  text-align: center;
 }
