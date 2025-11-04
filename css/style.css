@@ -1,80 +1,48 @@
-
 body {
+  text-align: center; 
   font-family: Arial, sans-serif;
   background-color: #fffaf0; 
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 
 h1 {
   color: white; 
   background-color: purple; 
-  text-align: center; 
-  font-size: 60px; 
+  font-size: 50px; 
   padding: 10px; 
   border-radius: 10px;
-  margin: 0;
 }
 
-.cabecera p {
-  font-size: 18px;
-  color: #333;
-  margin-top: 10px;
-}
-
-
-.enlace, a {
-  color: orangered; 
-  font-size: 24px; 
-  text-decoration: none; 
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.enlace:hover, a:hover {
-  color: purple; 
-}
-
-
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  margin-top: 40px;
-}
 
 .caja {
   background-color: #ffffff;
-  border: 3px solid purple;
-  border-radius: 12px;
+  border: 2px solid purple;
+  border-radius: 10px;
   width: 60%;
-  max-width: 600px;
+  margin: 20px auto;  
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.caja:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+a {
+  color: orangered; 
+  font-size: 22px; 
+  text-decoration: none; 
+  font-weight: bold;
 }
 
-.caja h2 {
-  color: purple;
-  margin-bottom: 10px;
+a:hover {
+  color: purple; 
 }
 
 
 footer {
   background-color: purple;
   color: white;
-  padding: 15px;
-  margin-top: 40px;
-  border-top: 3px solid orangered;
-  font-size: 16px;
+  padding: 10px;
+  margin-top: 30px;
 }
 
 
