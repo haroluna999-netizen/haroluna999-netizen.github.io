@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" type="text/css" href="./css/index.css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante</title>
+  <meta name="description" content="Restaurante La Gilda: cocina tradicional española con recetas como tortilla de patatas, paella y gazpacho.">
+  <meta name="keywords" content="restaurante, comida española, recetas, tortilla de patatas, paella, gazpacho, cocina andaluza">
+  <meta name="author" content="Azahara">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <title>Restaurante La Gilda</title>
 </head>
 
 <body>
-  <h1>Restaurante La Gilda</h1>
-  <img src="./img/restaurant.png" alt="Foto del Restaurante">
-  
-  <h2>Menú de recetas</h2>
-  <ul>
-    <li><a href="./html/tortilladepatatas.html">Tortilla de Patatas</a></li>
-    <li><a href="./html/paella.html">Paella Valenciana</a></li>
-    <li><a href="./html/gazpacho.html">Gazpacho Andaluz</a></li>
-  </ul>
+  <header class="cabecera">
+    <h1>Restaurante La Gilda</h1>
+    <nav class="navegacion">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <section class="presentacion">
+      <img src="./img/restaurant.png" alt="Foto del Restaurante">
+      <p>Bienvenidos a La Gilda, un restaurante de cocina tradicional española. Disfruta de nuestras recetas caseras elaboradas con productos frescos y locales.</p>
+    </section>
+
+    <section id="menu" class="menu">
+      <h2>Menú de Recetas</h2>
+      <ul class="lista-recetas">
+        <li><a href="./html/tortilladepatatas.html">Tortilla de Patatas</a></li>
+        <li><a href="./html/paella.html">Paella Valenciana</a></li>
+        <li><a href="./html/gazpacho.html">Gazpacho Andaluz</a></li>
+      </ul>
+    </section>
+
+    <aside class="info-extra">
+      <h3>Horario</h3>
+      <p>Lunes a domingo: 12:00 - 23:00</p>
+    </aside>
+  </main>
+
+  <footer class="pie" id="contacto">
+    <address>
+      Restaurante La Gilda - Calle del Sabor nº5, Sevilla <br>
+      Teléfono: 654 321 987 <br>
+      Email: <a href="contacto@lagilda.com">contacto@lagilda.com</a>
+    </address>
+    <p>&copy; 2025 Azahara María Haro Luna</p>
+  </footer>
 </body>
 </html>
+
