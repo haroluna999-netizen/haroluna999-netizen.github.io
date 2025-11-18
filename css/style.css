@@ -1,18 +1,31 @@
+
 body {
-  text-align: center; 
+  text-align: center;
   font-family: Arial, sans-serif;
-  background-color: #fffaf0; 
+  background-color: #fffaf0;
   margin: 0;
   padding: 0;
 }
 
 
+.cabecera {
+  padding: 20px;
+}
+
 h1 {
-  color: white; 
-  background-color: purple; 
-  font-size: 50px; 
-  padding: 10px; 
+  color: white;
+  background-color: purple;
+  font-size: 50px;
+  padding: 15px;
   border-radius: 10px;
+  margin: 0 auto 20px auto;
+}
+
+
+.contenedor {
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
 }
 
 
@@ -21,20 +34,32 @@ h1 {
   border: 2px solid purple;
   border-radius: 10px;
   width: 60%;
-  margin: 20px auto;  
+  margin: 20px auto;
   padding: 20px;
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.2);
 }
 
 
 a {
-  color: orangered; 
-  font-size: 22px; 
-  text-decoration: none; 
+  color: orangered;
+  font-size: 22px;
+  text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: purple; 
+  color: purple;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 12px 0;
 }
 
 
@@ -43,6 +68,23 @@ footer {
   color: white;
   padding: 10px;
   margin-top: 30px;
+  font-weight: bold;
+  border-top: 2px solid white;
+}
+
+
+@media (max-width: 600px) {
+  .caja {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  a {
+    font-size: 20px;
+  }
 }
 
 
