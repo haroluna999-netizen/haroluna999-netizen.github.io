@@ -1,0 +1,127 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.cabecera {
+  background-color: #c0392b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.cabecera h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.navegacion li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navegacion a:hover {
+  color: #f1c40f;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.caja {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.caja h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c0392b;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form select,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+form input[type="text"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #c0392b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(192, 57, 43, 0.5);
+}
+
+form textarea {
+  resize: none;
+}
+
+form input[type="radio"] {
+  margin-right: 5px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+form button {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #e74c3c;
+}
+
+.pie {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
