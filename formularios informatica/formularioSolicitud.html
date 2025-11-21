@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta SEO -->
+    <meta name="description" content="Formulario II - Datos personales e información de interés">
+    <meta name="keywords" content="Formulario, HTML, Actividad 7">
+    <meta name="author" content="Tu Nombre">
+
+    <title>Formulario II - Datos personales</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="../formularios informatica/formularioSolicitud.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <h1>Formulario "Amigos de la Informática"</h1>
+        <h2>Datos personales y otra información de interés</h2>
+    </header>
+
+    <main class="contenedor">
+        <section class="caja formulario">
+            <form action="#" method="post">
+
+                
+                <h3>Datos personales</h3>
+
+                <div class="grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+
+                <div class="grupo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="grupo">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+
+                
+                <h3>Otra información de interés</h3>
+
+                <div class="grupo">
+                    <label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia">
+                        <option value="">-- Selecciona una --</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="granada">Granada</option>
+                    </select>
+                </div>
+
+                <div class="grupo">
+                    <label>Situación laboral:</label>
+                    <div>
+                        <input type="radio" id="empleado" name="laboral" value="empleado">
+                        <label for="empleado">Empleado</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="desempleado" name="laboral" value="desempleado">
+                        <label for="desempleado">Desempleado</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="estudiante" name="laboral" value="estudiante">
+                        <label for="estudiante">Estudiante</label>
+                    </div>
+                </div>
+
+                <div class="grupo">
+                    <label>Intereses:</label>
+                    <div>
+                        <input type="checkbox" id="musica" name="intereses" value="musica">
+                        <label for="musica">Música</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="deporte" name="intereses" value="deporte">
+                        <label for="deporte">Deporte</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="viajes" name="intereses" value="viajes">
+                        <label for="viajes">Viajes</label>
+                    </div>
+                </div>
+
+                <div class="grupo">
+                    <label for="comentarios">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios"></textarea>
+                </div>
+
+                <!-- BOTONES -->
+                <div class="grupo botonera">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>IES Inca Garcilaso - Actividad 7</p>
+    </footer>
+
+</body>
+</html>

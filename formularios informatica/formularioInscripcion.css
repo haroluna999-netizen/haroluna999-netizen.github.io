@@ -1,0 +1,89 @@
+/* Reset sencillo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estructura general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.cabecera, .pie {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Caja principal */
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.caja {
+    background-color: white;
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+/* Estilo del formulario */
+.formulario .grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.formulario textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.botonera {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonera button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.botonera button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.botonera button[type="reset"] {
+    background-color: #d9534f;
+    color: white;
+}
+
+.botonera button:hover {
+    opacity: 0.85;
+}

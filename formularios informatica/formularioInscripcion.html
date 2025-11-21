@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta name="description" content="Formulario I - Actividad 7">
+    <meta name="keywords" content="Formulario, HTML, Actividad 7">
+    <meta name="author" content="Tu Nombre">
+
+    <title>Formulario I</title>
+
+    
+    <link rel="stylesheet" href="../formularios informatica/formularioInscripcion.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <h1>Formulario de Inscripción en los ciclos formativos de grado superior</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="caja formulario">
+            <form action="#" method="post">
+
+                <div class="grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="grupo">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="1" max="120">
+                </div>
+
+                <div class="grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+
+                <div class="grupo botonera">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>IES Inca Garcilaso - Actividad 7</p>
+    </footer>
+
+</body>
+</html>
