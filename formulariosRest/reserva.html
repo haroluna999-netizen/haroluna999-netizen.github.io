@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario para reservar mesa en el Restaurante La Gilda.">
+  <meta name="keywords" content="reserva, restaurante, mesa, La Gilda">
+  <meta name="author" content="Azahara">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Reservar Mesa</title>
+</head>
+
+<body>
+  <header class="cabecera">
+    <h1>Reservar Mesa</h1>
+    <nav class="navegacion">
+      <ul>
+        <li><a href="../index.html">Volver al Restaurante</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <section class="caja">
+      <h2>Formulario de Reserva</h2>
+
+      <form action="#" method="post">
+        <label>Nombre completo:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Teléfono:</label><br>
+        <input type="tel" name="telefono" required><br><br>
+
+        <label>Número de comensales:</label><br>
+        <input type="number" name="personas" min="1" max="20" required><br><br>
+
+        <label>Fecha:</label><br>
+        <input type="date" name="fecha" required><br><br>
+
+        <label>Hora:</label><br>
+        <input type="time" name="hora" required><br><br>
+
+        <label>Observaciones:</label><br>
+        <textarea name="mensaje" rows="4"></textarea><br><br>
+
+        <button type="submit">Reservar</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2025 AHL</p>
+  </footer>
+</body>
+</html>

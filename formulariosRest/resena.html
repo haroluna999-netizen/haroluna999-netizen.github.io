@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario para dejar una reseña sobre los platos del Restaurante La Gilda.">
+  <meta name="keywords" content="reseña, opinión, comida, restaurante, La Gilda">
+  <meta name="author" content="Azahara">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Dejar una Reseña</title>
+</head>
+
+<body>
+  <header class="cabecera">
+    <h1>Dejar una Reseña</h1>
+    <nav class="navegacion">
+      <ul>
+        <li><a href="../index.html">Volver al Restaurante</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <section class="caja">
+      <h2>Tu Opinión es Importante</h2>
+
+      <form action="#" method="post">
+
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Plato que deseas valorar:</label><br>
+        <select name="plato" required>
+          <option value="">Selecciona un plato</option>
+          <option value="tortilla de patatas">Tortilla de Patatas</option>
+          <option value="paella valenciana">Paella Valenciana</option>
+          <option value="gazpacho andaluz">Gazpacho Andaluz</option>
+        </select><br><br>
+
+        <label>Puntuación:</label><br>
+        <input type="radio" name="puntuacion" value="1"> 1 ★
+        <input type="radio" name="puntuacion" value="2"> 2 ★
+        <input type="radio" name="puntuacion" value="3"> 3 ★
+        <input type="radio" name="puntuacion" value="4"> 4 ★
+        <input type="radio" name="puntuacion" value="5" checked> 5 ★<br><br>
+
+        <label>Escribe tu reseña:</label><br>
+        <textarea name="mensaje" rows="5" required></textarea><br><br>
+
+        <button type="submit">Enviar Reseña</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2025 AHL</p>
+  </footer>
+</body>
+</html>
