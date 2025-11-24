@@ -1,69 +1,99 @@
-/* ----- ESTILOS GENERALES (compatibles con el CSS anterior) ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-h2 {
-    margin-top: 5px;
-    font-size: 1.2rem;
-    color: #555;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.cabecera, .pie {
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.cabecera h1 {
+    font-size: 20px;
+}
+
+.cabecera h2 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.caja {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
 }
 
 h3 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+    margin: 15px 0 10px 0;
+    font-size: 16px;
     color: #333;
-    border-left: 5px solid #007bff;
-    padding-left: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
 }
 
-/* Grupo del formulario */
 .formulario .grupo {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-/* Campos de texto */
-.formulario input,
-.formulario select,
-.formulario textarea {
-    padding: 10px;
-    border: 1px solid #999;
-    border-radius: 8px;
-    font-size: 14px;
-    background-color: #fafafa;
-}
-
-.formulario input:focus,
-.formulario select:focus,
-.formulario textarea:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 4px rgba(0,123,255,0.4);
-}
-
-/* Estilos para checkbox y radio */
-.formulario input[type="radio"],
-.formulario input[type="checkbox"] {
-    margin-right: 6px;
+    margin-bottom: 12px;
 }
 
 .formulario label {
     font-weight: bold;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
+    display: block;
+    font-size: 13px;
 }
 
-/* Caja principal */
-.caja {
-    animation: aparecer 0.3s ease-in-out;
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 7px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 13px;
 }
 
-/* Botones */
+.formulario textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+.formulario .grupo div {
+    margin-bottom: 4px;
+}
+
+.botonera {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
 .botonera button {
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 8px 16px;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .botonera button[type="submit"] {
@@ -77,11 +107,6 @@ h3 {
 }
 
 .botonera button:hover {
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
-/* Animación */
-@keyframes aparecer {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
