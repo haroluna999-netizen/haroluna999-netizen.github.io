@@ -1,27 +1,25 @@
-/* Reset sencillo */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estructura general */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 10px;
 }
 
 .cabecera, .pie {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 16px;
 }
 
-/* Caja principal */
 .contenedor {
     display: flex;
     justify-content: center;
@@ -29,49 +27,47 @@ body {
 
 .caja {
     background-color: white;
-    padding: 25px;
+    padding: 15px;
     width: 100%;
-    max-width: 500px;
-    border-radius: 15px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
 }
 
-/* Estilo del formulario */
 .formulario .grupo {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .formulario label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    font-size: 14px;
 }
 
 .formulario input,
 .formulario textarea {
-    padding: 10px;
-    border: 1px solid #999;
-    border-radius: 8px;
-    font-size: 14px;
+    padding: 7px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 13px;
 }
 
 .formulario textarea {
-    min-height: 80px;
-    resize: vertical;
+    min-height: 60px;
 }
 
 .botonera {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .botonera button {
-    padding: 10px 20px;
+    padding: 8px 15px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .botonera button[type="submit"] {
@@ -85,5 +81,5 @@ body {
 }
 
 .botonera button:hover {
-    opacity: 0.85;
+    opacity: 0.9;
 }
