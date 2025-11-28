@@ -1,120 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
-    <meta name="description" content="Formulario II - Datos personales e información de interés">
-    <meta name="keywords" content="Formulario, HTML, Actividad 7">
-    <meta name="author" content="Tu Nombre">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Formulario II - Datos personales e información de interés"/>
+    <meta name="keywords" content="Formulario, HTML, Actividad 7"/>
+    <meta name="author" content="Tu Nombre"/>
     <title>Formulario II - Datos personales</title>
 
-    
     <link rel="stylesheet" href="../formularios informatica/formularioSolicitud.css">
 </head>
 <body>
 
     <header class="cabecera">
-        <h1>Formulario "Amigos de la Informática"</h1>
-        <h2>Datos personales y otra información de interés</h2>
+        <h1>Rellena el siguiente cuestionario para formar parte del club de</h1>
+        <h2>"Amigos de la informática"</h2>
     </header>
 
     <main class="contenedor">
-        <section class="caja formulario">
-            <form action="#" method="post">
+       
+        <section class="panel datos">
+            <h3 class="panel-titulo">Datos personales</h3>
 
-                
-                <h3>Datos personales</h3>
-
-                <div class="grupo">
+            <form action="#" method="post" class="formulario">
+                <div class="fila">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
 
-                <div class="grupo">
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" name="apellidos" required>
+                <div class="fila">
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" id="domicilio" name="domicilio" placeholder="&lt;calle, número y localidad&gt;">
                 </div>
 
-                <div class="grupo">
-                    <label for="dni">DNI:</label>
-                    <input type="text" id="dni" name="dni" required>
+                <div class="fila">
+                    <label for="pais">País de origen:</label>
+                    <select id="pais" name="pais">
+                        <option>España</option>
+                        <option>Portugal</option>
+                        <option>Francia</option>
+                    </select>
                 </div>
 
-                <div class="grupo">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono">
+                <div class="fila">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="text" id="fecha" name="fecha" placeholder="dd / mm / aaaa">
                 </div>
 
-                <div class="grupo">
+                <div class="fila">
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email">
                 </div>
 
-                <div class="grupo">
-                    <label for="fecha">Fecha de nacimiento:</label>
-                    <input type="date" id="fecha" name="fecha">
+                <div class="fila">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
                 </div>
 
+                <div class="fila radios">
+                    <label>Estado civil:</label>
+                    <div class="opciones-inline">
+                        <label><input type="radio" name="estado" value="soltero"> Solter@</label>
+                        <label><input type="radio" name="estado" value="casado"> Casad@</label>
+                        <label><input type="radio" name="estado" value="separado"> Separad@</label>
+                        <label><input type="radio" name="estado" value="viudo"> Viud@</label>
+                    </div>
+                </div>
 
-                
-                <h3>Otra información de interés</h3>
+                <div class="fila radios">
+                    <label>Sexo:</label>
+                    <div class="opciones-inline">
+                        <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                        <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+                    </div>
+                </div>
+        </section>
 
-                <div class="grupo">
-                    <label for="provincia">Provincia:</label>
-                    <select id="provincia" name="provincia">
-                        <option value="">-- Selecciona una --</option>
-                        <option value="sevilla">Sevilla</option>
-                        <option value="cordoba">Córdoba</option>
-                        <option value="malaga">Málaga</option>
-                        <option value="granada">Granada</option>
+        
+        <section class="panel intereses">
+            <h3 class="panel-titulo">Otra información de interés</h3>
+
+            <div class="fila doble-col">
+                <div class="col-izq">
+                    <label>Seleccione los componentes electrónicos con los que habitualmente trabajas:</label>
+                    <div class="lista-componentes">
+                        <label><input type="checkbox" name="comp[]" value="movil"> Móvil</label>
+                        <label><input type="checkbox" name="comp[]" value="tablet"> Tablet</label>
+                        <label><input type="checkbox" name="comp[]" value="ordenador"> Ordenador</label>
+                        <label><input type="checkbox" name="comp[]" value="ebook"> Ebook</label>
+                    </div>
+                </div>
+
+                <div class="col-der">
+                   
+                    <label class="invisible">dispositivo</label>
+                    <select size="4" class="mini-list" aria-label="dispositivos">
+                        <option>Móvil</option>
+                        <option>Tablet</option>
+                        <option>Ordenador</option>
+                        <option>Ebook</option>
                     </select>
                 </div>
+            </div>
 
-                <div class="grupo">
-                    <label>Situación laboral:</label>
-                    <div>
-                        <input type="radio" id="empleado" name="laboral" value="empleado">
-                        <label for="empleado">Empleado</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="desempleado" name="laboral" value="desempleado">
-                        <label for="desempleado">Desempleado</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="estudiante" name="laboral" value="estudiante">
-                        <label for="estudiante">Estudiante</label>
-                    </div>
+            <div class="fila">
+                <label>Selecciona tus actividades favoritas:</label>
+                <div class="lista-actividades">
+                    <label><input type="checkbox" name="act[]" value="deporte"> Hacer deporte</label>
+                    <label><input type="checkbox" name="act[]" value="amigos"> Salir con mis amigos</label>
+                    <label><input type="checkbox" name="act[]" value="series"> Ver series, pelis,...</label>
+                    <label><input type="checkbox" name="act[]" value="senderismo"> Realizar rutas de senderismo</label>
+                    <label><input type="checkbox" name="act[]" value="cine"> Ir al cine</label>
+                    <label><input type="checkbox" name="act[]" value="musica"> Escuchar música</label>
                 </div>
+            </div>
 
-                <div class="grupo">
-                    <label>Intereses:</label>
-                    <div>
-                        <input type="checkbox" id="musica" name="intereses" value="musica">
-                        <label for="musica">Música</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="deporte" name="intereses" value="deporte">
-                        <label for="deporte">Deporte</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="viajes" name="intereses" value="viajes">
-                        <label for="viajes">Viajes</label>
-                    </div>
-                </div>
+            <div class="fila">
+                <label for="motivo">Explique brevemente el motivo por el que desea ingresar en nuestro club:</label>
+                <textarea id="motivo" name="motivo" placeholder="Escribe aquí..."></textarea>
+            </div>
 
-                <div class="grupo">
-                    <label for="comentarios">Comentarios adicionales:</label>
-                    <textarea id="comentarios" name="comentarios"></textarea>
-                </div>
+            <div class="fila">
+                <label for="peli">Elige o escribe tu peli favorita:</label>
+                <input type="text" id="peli" name="peli">
+            </div>
 
-                
-                <div class="grupo botonera">
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Borrar</button>
-                </div>
+            <div class="botonera-final">
+                <button type="submit" class="btn enviar">Enviar</button>
+                <button type="reset" class="btn cancelar">Cancelar</button>
+            </div>
 
             </form>
         </section>
