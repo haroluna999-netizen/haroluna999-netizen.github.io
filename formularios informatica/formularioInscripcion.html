@@ -3,58 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Formulario de Inscripción</title>
-
-    <link rel="stylesheet" href="../formularios informatica/formularioInscripcion.css">
+    <title>Hoja de Inscripción</title>
+    <link rel="stylesheet" href="formularioInscripcion.css">
 </head>
+
 <body>
 
-    <header class="cabecera">
-        <h1>HOJA DE INSCRIPCIÓN EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
-    </header>
+    <h1 style="text-align:center; margin-bottom: 20px;">
+        HOJA DE INSCRIPCIÓN <br>
+        EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR
+    </h1>
 
-    <main class="contenedor">
-        <section class="formulario-caja">
-            <form action="#" method="post" class="formulario">
+    <div class="contenedor">
 
-                <div class="fila">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+      
+        <div class="caja">
+
+            
+            <fieldset class="bloque gris">
+                <legend>Datos Personales</legend>
+
+                <div class="grupo">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre">
                 </div>
 
-                <div class="fila">
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" name="apellidos" required>
+                <div class="grupo">
+                    <label>Apellidos:</label>
+                    <input type="text" name="apellidos">
                 </div>
 
-                <div class="fila">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="grupo">
+                    <label>DNI:</label>
+                    <input type="text" name="dni">
                 </div>
 
-                <div class="fila">
-                    <label for="edad">Edad:</label>
-                    <input type="number" id="edad" name="edad" min="1" max="120">
+                <div class="grupo">
+                    <label>Localidad de Nacimiento:</label>
+                    <input type="text" name="localidad">
                 </div>
 
-                <div class="fila">
-                    <label for="mensaje">Motivación para cursar este ciclo:</label>
-                    <textarea id="mensaje" name="mensaje"></textarea>
+                <div class="grupo">
+                    <label>Provincia:</label>
+                    <select name="provincia">
+                        <option>Huelva</option>
+                        <option>Sevilla</option>
+                        <option>Córdoba</option>
+                        <option>Cádiz</option>
+                        <option>Málaga</option>
+                        <option>Jaén</option>
+                        <option>Granada</option>
+                        <option>Almería</option>
+                    </select>
                 </div>
 
-                <div class="botonera">
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Borrar</button>
+                <div class="grupo">
+                    <label>Fecha de Nacimiento:</label>
+                    <input type="date" name="fechaNacimiento">
                 </div>
 
-            </form>
-        </section>
-    </main>
+                <div class="grupo">
+                    <label>Dirección:</label>
+                    <input type="text" name="direccion">
+                </div>
 
-    <footer class="pie">
-        <p>IES Inca Garcilaso - Actividad 7</p>
-    </footer>
+                <div class="grupo">
+                    <label>Código Postal:</label>
+                    <input type="text" name="cp">
+                </div>
+
+            </fieldset>
+
+           
+            <fieldset class="bloque naranja">
+                <legend>Forma de Acceso</legend>
+
+                <label><input type="radio" name="acceso" value="directo"> Directo</label>
+
+                <div class="subgrupo">
+                    <label><input type="radio" name="modalidad"> Bachillerato Log Modalidad:</label>
+                    <input type="text" class="campo-mini">
+                </div>
+
+                <div class="subgrupo">
+                    <label><input type="radio" name="modalidad"> Experimental:</label>
+                    <input type="text" class="campo-mini">
+                </div>
+
+                <div class="subgrupo">
+                    <label><input type="radio" name="modalidad"> COU Opción:</label>
+                    <input type="text" class="campo-mini">
+                </div>
+
+                <div class="subgrupo">
+                    <label><input type="radio" name="modalidad"> FP2:</label>
+                    <input type="text" class="campo-mini">
+                </div>
+
+                <div class="subgrupo">
+                    <label><input type="radio" name="modalidad"> Otros (especifique):</label>
+                    <input type="text" class="campo-mini">
+                </div>
+
+                <label><input type="radio" name="acceso" value="prueba"> Prueba Libre</label>
+
+            </fieldset>
+
+            
+            <fieldset class="bloque morado">
+                <legend>Documentos Adjuntados</legend>
+
+                <label><input type="checkbox" name="fotocopia"> Fotocopia DNI</label><br>
+                <label><input type="checkbox" name="certificado"> Certificado Académico</label><br>
+
+                <label>
+                    <input type="checkbox" name="otros"> Otros documentos (especifique):
+                </label>
+                <input type="text" class="campo-mini">
+
+            </fieldset>
+
+            
+            <div class="botonera">
+                <button type="submit">Enviar Solicitud</button>
+                <button type="reset">Limpiar Datos</button>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>
