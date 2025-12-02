@@ -37,12 +37,16 @@
           <option value="gazpacho andaluz">Gazpacho Andaluz</option>
         </select><br><br>
 
-        <label>Puntuación:</label><br>
-        <input type="radio" name="puntuacion" value="1"> 1 ★
-        <input type="radio" name="puntuacion" value="2"> 2 ★
-        <input type="radio" name="puntuacion" value="3"> 3 ★
-        <input type="radio" name="puntuacion" value="4"> 4 ★
-        <input type="radio" name="puntuacion" value="5" checked> 5 ★<br><br>
+        <label>Puntuación:
+                <select required>
+                    <option value="">-- Selecciona --</option>
+                    <option>⭐ 1</option>
+                    <option>⭐⭐ 2</option>
+                    <option>⭐⭐⭐ 3</option>
+                    <option>⭐⭐⭐⭐ 4</option>
+                    <option>⭐⭐⭐⭐⭐ 5</option>
+                </select>
+            </label>
 
         <label>Escribe tu reseña:</label><br>
         <textarea name="mensaje" rows="5" required></textarea><br><br>
