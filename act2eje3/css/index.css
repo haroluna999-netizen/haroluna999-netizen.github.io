@@ -1,69 +1,96 @@
+/* Estilo general */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fffaf0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-header {
+/* Header */
+header.cabecera {
   width: 100%;
-  background-color: #f8d7da;
-  padding: 25px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fddede;
+  padding: 25px 0;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-h1 {
+header.cabecera h1 {
   margin: 0;
+  font-size: 2.2rem;
   color: #b22222;
 }
 
-h2 {
-  color: #333;
-  margin: 15px 0;
-}
-
-img {
-  width: 300px;
-  border-radius: 8px;
-  margin: 20px 0;
-}
-
-.contenedor {
+.navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: #b22222;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+  color: #ff6b6b;
+}
+
+/* Main */
+main.contenido {
   width: 100%;
-}
-
-.caja {
-  width: 80%;
-  max-width: 650px;
-  padding: 25px;
-  background-color: #ffffff;
-  border: 2px solid #b22222;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px 0;
+  gap: 40px;
 }
 
-.caja:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+/* Secciones y cajas */
+.presentacion, .menu, .formularios, .receta, .info-extra {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 2px solid #f5a3a3;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  padding: 25px 30px;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.presentacion:hover, .menu:hover, .formularios:hover, .receta:hover, .info-extra:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Imágenes */
+img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Listas */
 ul, ol {
   text-align: left;
   padding-left: 25px;
-  margin: 0 auto 15px auto;
+  margin: 15px auto;
   display: block;
+  max-width: 500px;
 }
 
 ul {
@@ -76,26 +103,32 @@ ol {
 
 li {
   margin: 8px 0;
+  line-height: 1.6;
 }
 
+/* Enlaces internos */
 a {
   text-decoration: none;
   color: #b22222;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ff6347;
+  color: #ff6b6b;
 }
 
-footer {
+/* Footer */
+footer.pie {
   width: 100%;
-  background-color: #f8d7da;
-  padding: 15px;
+  background-color: #fddede;
+  padding: 20px;
+  text-align: center;
   margin-top: 40px;
   font-size: 14px;
-  text-align: center;
 }
+
+
 
 
 
