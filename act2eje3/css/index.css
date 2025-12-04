@@ -52,9 +52,18 @@ img {
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
+
 ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 25px;
+  text-align: left;
+}
+
+
+ol {
+  list-style: decimal;
+  padding-left: 25px;
+  text-align: left;
 }
 
 li {
