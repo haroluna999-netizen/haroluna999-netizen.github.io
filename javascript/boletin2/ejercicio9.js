@@ -14,7 +14,7 @@ let personas = new Map([
 let mayores = [];
 let menores = [];
 
-// Clasificar personas
+
 personas.forEach((edad, nombre) => {
   if (edad >= 18) {
     mayores.push(nombre);
@@ -23,6 +23,5 @@ personas.forEach((edad, nombre) => {
   }
 });
 
-// Mostrar resultados
 console.log("Personas mayores de edad:", mayores);
 console.log("Personas menores de edad:", menores);
