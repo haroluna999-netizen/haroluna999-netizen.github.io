@@ -22,4 +22,5 @@ console.log("Mínimo: ", min);
 let matrizDobles = matriz.map(fila => fila.map(num=> num*2));
 console.log("Matriz doble: ", matrizDobles);
 
-let matrizOrdenada = matriz.map(fila=> )
+let matrizOrdenada = matriz.map(fila=> [...fila].sort((a,b)=>a-b));
+console.log("Filas ordenadas: ", matrizOrdenada);
