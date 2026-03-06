@@ -26,4 +26,9 @@ nombresUnicos.forEach(nombre=>{
         let edad = Math.floor(Math.random()*11) + 20
         edades.set(nombre,edad)
     }
-})
+    })
+let lista = [...nombresUnicos]
+
+for (let i=0;i<lista.length;i++){
+    console.log(lista[i], edades.get(lista[i]))
+}
