@@ -1,5 +1,5 @@
 // crea un nuevo mapa vacio llamado estudiantes
-//añade cinco elementos al mapa donde la clase sea el numero de ID y el caloe sea el nombre del alumno
+//añade cinco elementos al mapa donde la clase sea el numero de ID y el valor sea el nombre del alumno
 // utiliza un metodo para comprobar si el id 105 existe en el mapa y muestra el resultado booleano por consola
 // muestra por consola el tamaño total del mapa utilizando la propiedad correspondiente
 // elimina el elemento con el id que desees y vacia el mapa por completo al finalizar
