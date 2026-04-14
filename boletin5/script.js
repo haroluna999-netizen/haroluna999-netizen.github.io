@@ -119,10 +119,14 @@ function comparar() {
 
 // 11
 function sumatorio() {
-  let n = document.getElementById("n").value;
-  let suma = 0;
+  let n = Number(document.getElementById("n").value);
 
-  for (let i = 0; i <= n; i++) suma += i;
+  if (isNaN(n) || n < 0) {
+    document.getElementById("res11").innerHTML = "Introduce un número válido";
+    return;
+  }
 
-  document.getElementById("res11").innerHTML = suma;
+  let suma = (n * (n + 1)) / 2;
+
+  document.getElementById("res11").innerHTML = "Resultado: " + suma;
 }
