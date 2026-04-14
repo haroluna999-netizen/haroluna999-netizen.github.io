@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Actividades JavaScript</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Actividades JavaScript</h1>
+
+<!-- 1 -->
+<h2>1. Datos persona</h2>
+<input type="text" id="nombre" placeholder="Nombre">
+<input type="text" id="apellidos" placeholder="Apellidos">
+<input type="number" id="edad" placeholder="Edad">
+<button onclick="persona()">Mostrar</button>
+<div id="res1"></div>
+
+<!-- 2 -->
+<h2>2. Divisible entre 2</h2>
+<input type="number" id="num">
+<button onclick="divisible()">Comprobar</button>
+<div id="res2" class="negro"></div>
+
+<!-- 3 -->
+<h2>3. Estaciones (array)</h2>
+<input type="number" id="estacion">
+<button onclick="estacionArray()">Ver</button>
+<div id="res3"></div>
+
+<!-- 4 -->
+<h2>4. Mes (switch)</h2>
+<input type="text" id="mes">
+<button onclick="mesSwitch()">Ver estación</button>
+<div id="res4" class="rojo"></div>
+
+<!-- 5 -->
+<h2>5. Mes (if)</h2>
+<input type="text" id="mes2">
+<button onclick="mesIf()">Ver estación</button>
+<div id="res5" class="rojo"></div>
+
+<!-- 6 -->
+<h2>6. IVA</h2>
+<input type="text" id="nombreIVA">
+<input type="number" id="cantidad">
+<button onclick="calcularIVA()">Calcular</button>
+<div id="res6"></div>
+
+<!-- 7 -->
+<h2>7. Provincia</h2>
+<input type="text" id="nombre7">
+<select id="provincia">
+<option>Córdoba</option>
+<option>Sevilla</option>
+<option>Málaga</option>
+<option>Granada</option>
+<option>Jaén</option>
+<option>Huelva</option>
+<option>Cádiz</option>
+<option>Almería</option>
+</select>
+<input type="text" id="pueblo">
+<button onclick="provincia()">Mostrar</button>
+<div id="res7"></div>
+
+<!-- 8 -->
+<h2>8. Conversor</h2>
+<input type="number" id="km">
+<button onclick="kmMillas()">Km → Millas</button>
+<button onclick="millasKm()">Millas → Km</button>
+<div id="res8"></div>
+
+<!-- 9 -->
+<h2>9. Contar caracteres</h2>
+<input type="text" id="texto">
+<button onclick="contar()">Contar</button>
+<div id="res9"></div>
+
+<!-- 10 -->
+<h2>10. Comparar palabras</h2>
+<input type="text" id="p1">
+<input type="text" id="p2">
+<button onclick="comparar()">Comparar</button>
+
+<!-- 11 -->
+<h2>11. Sumatorio</h2>
+<input type="number" id="n">
+<button onclick="sumatorio()">Calcular</button>
+<div id="res11"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
