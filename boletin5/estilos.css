@@ -1,20 +1,119 @@
 body {
-  font-family: Arial;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+  margin: 0;
   padding: 20px;
+  color: #333;
 }
 
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* Subtítulos */
 h2 {
-  margin-top: 30px;
+  margin-top: 40px;
+  color: #2c3e50;
+  border-left: 5px solid #4a90e2;
+  padding-left: 10px;
 }
 
-.negro {
-  background: black;
+/* Inputs */
+input, select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74,144,226,0.5);
+}
+
+/* Botones */
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background: #4a90e2;
   color: white;
-  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
 }
 
+button:hover {
+  background: #357ABD;
+  transform: scale(1.05);
+}
+
+/* Contenedores de resultados */
+div[id^="res"], 
+#tablaRecetas {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Caja negra (actividad 2) */
+.negro {
+  background: #111 !important;
+  color: #fff !important;
+}
+
+/* Caja roja (actividad 4 y 5) */
 .rojo {
-  background: red;
-  color: yellow;
+  background: #e74c3c !important;
+  color: #fff !important;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+th {
+  background: #4a90e2;
+  color: white;
+  padding: 12px;
+}
+
+td {
   padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background: #f1f7ff;
+  transition: 0.3s;
+}
+
+/* Efecto general de tarjetas */
+section, div {
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  input, select, button {
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
 }
