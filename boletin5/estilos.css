@@ -1,0 +1,13 @@
+.titulo-activo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.color-celdas {
+    background-color: lightblue;
+}
