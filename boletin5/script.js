@@ -114,7 +114,13 @@ function comparar() {
   let p1 = document.getElementById("p1").value;
   let p2 = document.getElementById("p2").value;
 
-  alert(p1.length > p2.length ? p1 : p2);
+  if (p1.length > p2.length) {
+    alert(p1);
+  } else if (p2.length > p1.length) {
+    alert(p2);
+  } else {
+    alert("Las palabras tienen la misma longitud");
+  }
 }
 
 // 11
