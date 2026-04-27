@@ -115,11 +115,15 @@ function comparar() {
   let p2 = document.getElementById("p2").value;
 
   if (p1.length > p2.length) {
-    alert(p1);
+    alert("La palabra más larga es: " + p1 +
+          "\nLa menos larga es: " + p2);
+          
   } else if (p2.length > p1.length) {
-    alert(p2);
+    alert("La palabra más larga es: " + p2 +
+          "\nLa menos larga es: " + p1);
+          
   } else {
-    alert("Las palabras tienen la misma longitud");
+    alert("Las dos palabras tienen la misma longitud");
   }
 }
 
