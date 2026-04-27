@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Recetas</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    table {
+        margin: 20px auto;
+        border-collapse: collapse;
+        width: 60%;
+    }
+
+    th, td {
+        border: 1px solid #333;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #0d6efd;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Listado de Recetas</h2>
+
+<button onclick="mostrarRecetas()">Mostrar recetas</button>
+
+<div id="resultado"></div>
+
+<script>
+const recetas = [
+    { id: 1, nombre: "Salmorejo", ingredientes: "tomate, aceite, pan" },
+    { id: 2, nombre: "Gachas", ingredientes: "harina, agua, azucar" },
+    { id: 3, nombre: "Migas", ingredientes: "pan, ajos, aceite" }
+];
+
+function mostrarRecetas() {
+    let html = `
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nombre Receta</th>
+                <th>Ingredientes</th>
+            </tr>
+    `;
+
+    recetas.forEach(receta => {
+        html += `
+            <tr>
+                <td>${receta.id}</td>
+                <td>${receta.nombre}</td>
+                <td>${receta.ingredientes}</td>
+            </tr>
+        `;
+    });
+
+    html += `</table>`;
+
+    document.getElementById("resultado").innerHTML = html;
+}
+</script>
+
+</body>
+</html>
