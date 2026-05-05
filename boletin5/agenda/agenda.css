@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+#lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+li {
+    margin: 5px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+}
