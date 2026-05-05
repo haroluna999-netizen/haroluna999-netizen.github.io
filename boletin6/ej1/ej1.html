@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores de Tabla con Local Storage</title>
+    <link rel="stylesheet" href="ej1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Alternancia de colores
+            <small>LocalStorage persistente</small>
+        </h1>
+        
+        <div class="panel">
+            <div class="color-group">
+                <label>
+                    <span style="background: #d4e6f1;"></span> 
+                    Filas PARES
+                </label>
+                <select id="colorParSelect">
+                </select>
+            </div>
+            <div class="color-group">
+                <label>
+                    <span style="background: #ffe0b5;"></span> 
+                    Filas IMPARES
+                </label>
+                <select id="colorImparSelect">
+                </select>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="recetasTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre Receta</th>
+                        <th>Ingredientes</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaBody">
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="info">
+            Los colores elegidos se guardan automáticamente. Al recargar página se mantienen.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
