@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "Paella Valenciana",
+    "ingredientes": ["Arroz bomba", "Pollo", "Conejo", "Judías verdes (bajoqueta)", "Garrofó", "Azafrán", "Aceite de oliva", "Sal"],
+    "pasos": [
+      "Dorar los trozos de pollo y conejo en la paella con aceite de oliva y un toque de sal.",
+      "Añadir las judías verdes y el garrofó, sofriéndolos junto a la carne.",
+      "Agregar el agua y dejar hervir para que se cocine la carne y se forme un buen caldo.",
+      "Incorporar el azafrán, repartir el arroz uniformemente y cocinar a fuego vivo primero y luego suave durante unos 18 minutos."
+    ],
+    "imagen": "imagenes/paella-de-pollo.jpg",
+    "pdf": "pdfs/receta_paella_valenciana(1).pdf"
+  },
+  {
+    "nombre": "Tortilla de Patatas",
+    "ingredientes": ["Patatas", "Huevos", "Cebolla (opcional)", "Aceite de oliva", "Sal"],
+    "pasos": [
+      "Pelar y cortar las patatas y la cebolla en láminas finas.",
+      "Freír todo junto en abundante aceite de oliva a fuego lento hasta que estén tiernas.",
+      "Escurrir bien el aceite, batir los huevos en un bol grande y mezclarlo con las patatas y la cebolla.",
+      "Cuajar la mezcla en una sartén caliente con unas gotas de aceite durante un par de minutos por cada lado."
+    ],
+    "imagen": "imagenes/tortillaesp.jpg",
+    "pdf": "pdfs/receta_tortilla_patatas.pdf"
+  },
+  {
+    "nombre": "Salmorejo",
+    "ingredientes": ["Tomates maduros", "Pan de hogaza (del día anterior)", "Aceite de oliva virgen extra", "Diente de ajo", "Sal", "Huevo duro y jamón (para decorar)"],
+    "pasos": [
+      "Triturar los tomates limpios en una batidora y pasarlos por un colador para quitar la piel y las semillas.",
+      "Añadir el pan troceado al puré de tomate para que se ablande durante unos minutos.",
+      "Incorporar el diente de ajo y la sal, y batir muy bien hasta conseguir una crema homogénea.",
+      "Sin parar de batir, añadir el aceite de oliva poco a poco para que emulsione. Servir frío con huevo duro y jamón picado por encima."
+    ],
+    "imagen": "imagenes/salmorejo.jpg",
+    "pdf": "pdfs/receta_salmorejo.pdf"
+  }
+]
